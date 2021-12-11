@@ -1,0 +1,42 @@
+.footer{
+   min-height: 100px;
+    border: 1px solid lightgray;
+   color: black;
+   margin-top: 50px;
+}
+.social{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px 0 0 550px;
+}
+.tel{
+    text-align: center;
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+@media (max-width:780px){
+    .social{
+        margin: 30px 0 0 230px !important;
+    }
+    .tel{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:380px){
+    .social{
+        margin: 30px 0 0 40px !important;
+    }
+    .tel{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:410px){
+    .social{
+        margin: 30px 0 0 40px !important;
+    }
+    .tel{
+        margin-bottom: 10px;
+    }
+}

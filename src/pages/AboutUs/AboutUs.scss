@@ -1,0 +1,49 @@
+.containerUs{
+    max-width:1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+  
+}
+.study{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    .photoStudy{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+.brandsDiv{
+    border: 1px solid lightgray;
+}
+.brands{
+    width: 20%;
+}
+@media (max-width: 850px ){
+    .containerUs{
+        width: 750px;
+    }
+    .photoStudy{
+        width: 200px !important;
+    }
+}
+@media (max-width: 380px ){
+    .containerUs{
+        width: 350px;
+    }
+    .study{
+        display: flex;
+        flex-direction: column;
+    }
+    .photoStudy{
+        width: 300px !important;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+}
+

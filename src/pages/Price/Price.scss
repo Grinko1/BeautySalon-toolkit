@@ -1,0 +1,23 @@
+.container-price{
+    max-width:1200px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+h1{
+  
+    border-bottom: 1px solid white;
+    height: 70px;
+
+}
+.hairPrice{
+    h2{
+        text-decoration: underline;
+        letter-spacing: 1px;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}

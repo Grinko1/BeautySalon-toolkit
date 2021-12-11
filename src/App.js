@@ -1,56 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import {BrowserRouter , Route, Switch} from 'react-router-dom'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Services from './pages/Services/Services'
+import Masters from './pages/Masters/Masters'
+import Price from './pages/Price/Price'
+import AboutUs from './pages/AboutUs/AboutUs'
+import Home from './pages/Home/Home';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div>
+      <BrowserRouter>
+      <Header/>
+      <div className='container'>
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path='/services' component={Services}/>
+          <Route path='/masters' component={Masters}/>
+          <Route path='/price' component={Price}/>
+          <Route path='/about-us' component={AboutUs}/>
+        </Switch>
+    </div>
+     
+      <Footer/>
+      </BrowserRouter>
+   
     </div>
   );
 }

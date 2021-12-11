@@ -1,0 +1,93 @@
+.services{
+    max-width:1200px;
+ 
+}
+.infoNail{
+    display: flex;
+    margin-top: 50px;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+
+   img{
+       border-radius: 30px;
+       width: 50%;
+       height: 600px;
+   }
+   .img-cosmetology{
+       object-fit: cover;
+   }
+}
+.nail-desc{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(56, 55, 55);
+
+    h2, h3{
+        text-align: center;
+    }
+
+    li{
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+   .info-p{
+    text-align: center;
+      
+    font-weight: 600;
+    font-size: 20px;
+   }
+   .showPrice{
+        
+     cursor: pointer;
+       border:1px solid black;
+       background: transparent;
+       padding: 10px;
+       margin: auto;
+       font-size: 24px;
+
+       transition: all 0.5s;
+   }
+   
+}
+@media(max-width:992px) {
+    .services{ 
+        width: 900px;
+    }
+}
+@media(max-width:780px) {
+    .services{ 
+        width: 700px;
+    }
+}
+@media(max-width:700px) {
+    .services{ 
+        width: 650px;
+    }
+    .infoNail{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+        .img-cosmetology{
+            width: 100%;
+        }
+    }
+}
+@media(max-width:380px) {
+    .services{ 
+        width: 340px;
+    }
+    .infoNail{
+        margin-left: 30px;
+        flex-direction: column;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .img-cosmetology{
+            width: 100%;
+        }
+    }
+}
